@@ -1,0 +1,12 @@
+# Entorno virtual
+venv/
+
+# Archivos de entorno
+*.env
+
+# Archivos de migración (si no quieres subirlos)
+__pycache__/
+*.pyc
+
+# Configuración de VSCode (opcional)
+.vscode/
