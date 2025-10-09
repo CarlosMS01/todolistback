@@ -1,8 +1,8 @@
 # backend/app.py
-from .database import init_app, db
-from .models import User, Task 
-from routes.auth import auth_bp
-from routes.tasks import tasks_bp
+from backend.database import init_app, db
+from backend.models import User, Task 
+from backend.routes.auth import auth_bp
+from backend.routes.tasks import tasks_bp
 from flask_cors import CORS
 
 app = init_app()
