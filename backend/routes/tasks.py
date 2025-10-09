@@ -2,7 +2,7 @@
 from flask import Blueprint, request, jsonify, g
 from backend.models import Task
 from backend.database import db
-from middleware.jwt_required import jwt_required
+from backend.middleware.jwt_required import jwt_required
 
 tasks_bp = Blueprint('tasks', __name__)
 
