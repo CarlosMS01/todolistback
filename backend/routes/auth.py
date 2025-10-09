@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify, make_response, g
-from models import User
-from database import db
+from backend.models import User
+from backend.database import db
 from flask_bcrypt import Bcrypt
 import jwt, os
 from datetime import datetime, timedelta

@@ -1,7 +1,7 @@
 # backend/routes/tasks.py
 from flask import Blueprint, request, jsonify, g
-from models import Task
-from database import db
+from backend.models import Task
+from backend.database import db
 from middleware.jwt_required import jwt_required
 
 tasks_bp = Blueprint('tasks', __name__)
