@@ -16,7 +16,7 @@ app.register_blueprint(tasks_bp, url_prefix='/api')
 
 @app.route("/")
 def home():
-    return "To-Do Pro API funcionando"
+    return "To-Do Pro API funcionando. Versión actual: Octubre 2025"
 
 if __name__ == "__main__":
     app.run(debug=False)
