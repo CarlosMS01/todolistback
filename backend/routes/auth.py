@@ -59,7 +59,7 @@ def login():
         token,
         httponly=True,
         secure=True,
-        samesite='Strict',
+        samesite='None',
         max_age=7200
     )
     return response
