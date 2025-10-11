@@ -83,5 +83,13 @@ def get_current_user():
 @auth_bp.route('/logout', methods=['POST'])
 def logout():
     response = jsonify({'message': 'Sesión cerrada'})
-    response.set_cookie('access_token', '', max_age=0)
+    response.set_cookie(
+        'access_token',
+        '',
+        httponly=True,
+        secure=True,
+        samesite='None',
+        max_age=0
+    )
     return response
+
